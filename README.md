@@ -1,9 +1,6 @@
 <div align="center">
 
-  <picture>
-    <source media="(prefers-color-scheme: dark)" srcset="./public/archon-logo-white.svg">
-    <img src="./public/archon-logo.svg" alt="ARCHON Logo" width="380">
-  </picture>
+  <img src="./public/archon-logo.svg" alt="ARCHON Logo" width="380">
 
   <h1>ARCHON</h1>
 
@@ -38,15 +35,16 @@
 
 **Archon** is an AI-native engineering studio designed for software developers, system architects, and technical leads who need to architect systems rigorously before and during implementation.
 
-Most software failures do not stem from bad syntax—they stem from **faulty architectural assumptions**: unstated scaling limits, unexamined security boundaries, data model friction, and hidden operational cost cliffs. 
+Most software failures do not stem from bad syntax—they stem from **faulty architectural assumptions**: unstated scaling limits, unexamined security boundaries, data model friction, and hidden operational cost cliffs.
 
 Archon moves beyond passive diagramming and static project specifications into **active reasoning support**:
+
 - **Stress-tests system design assumptions** against real-world constraints (scale, latency, budget, stack).
 - **Surfaces hidden trade-offs** before a single line of application code is written.
 - **Identifies critical ambiguities and security gaps** via automated architectural discovery.
 - **Keeps architecture alive and synchronized** with project specifications as constraints shift.
 
-> **The Archon Standard:** *Ship with zero architectural regrets, unassailable structural confidence, and a living record of your system decisions.*
+> **The Archon Standard:** _Ship with zero architectural regrets, unassailable structural confidence, and a living record of your system decisions._
 
 ---
 
@@ -70,15 +68,16 @@ Where does Archon fit into your engineering toolkit? Here is how it fundamentall
          └───────────────────────────┘               └───────────────────────────┘
 ```
 
-| Dimension | AI Code Assistants<br>*(Copilot, Cursor)* | Diagramming Tools<br>*(Mermaid, Draw.io, Eraser)* | Task Trackers<br>*(Linear, Jira)* | **ARCHON**<br>*(Architectural Studio)* |
-|---|---|---|---|---|
-| **Primary Focus** | Code syntax & boilerplate generation | Static box-and-line pictures | Tasks, sprints, and timeline ("What" & "When") | **System reasoning, trade-offs & constraints ("Why" & "How")** |
-| **Architectural Awareness** | **None.** Optimizes locally at the file or function level. | **Passive.** Shows what you draw; cannot critique or reason. | **None.** Ignores architectural soundness entirely. | **Active & Global.** Evaluates cross-cutting boundaries, latencies, and security models. |
-| **Impact on Technical Debt** | Often *accelerates* technical debt by generating flawed code faster. | None. Diagrams rot and go stale within days. | Tracks tickets representing tech debt after the fact. | **Eliminates technical debt upstream** by catching bad assumptions before implementation. |
-| **Interaction Model** | Autocomplete prompts in code editors | Drag-and-drop shapes & text labels | Form fields, kanban boards, and sprints | **Voice Studio brain dumps, live AI ambiguity probes, and decision matrices** |
-| **Living State** | Transient chat context; discarded across sessions | Dead PNG exports or unversioned canvas files | Closed tickets; detached from design reality | **Relational, queryable, synchronized decision records linked directly to specs** |
+| Dimension                    | AI Code Assistants<br>_(Copilot, Cursor)_                            | Diagramming Tools<br>_(Mermaid, Draw.io, Eraser)_            | Task Trackers<br>_(Linear, Jira)_                     | **ARCHON**<br>_(Architectural Studio)_                                                    |
+| ---------------------------- | -------------------------------------------------------------------- | ------------------------------------------------------------ | ----------------------------------------------------- | ----------------------------------------------------------------------------------------- |
+| **Primary Focus**            | Code syntax & boilerplate generation                                 | Static box-and-line pictures                                 | Tasks, sprints, and timeline ("What" & "When")        | **System reasoning, trade-offs & constraints ("Why" & "How")**                            |
+| **Architectural Awareness**  | **None.** Optimizes locally at the file or function level.           | **Passive.** Shows what you draw; cannot critique or reason. | **None.** Ignores architectural soundness entirely.   | **Active & Global.** Evaluates cross-cutting boundaries, latencies, and security models.  |
+| **Impact on Technical Debt** | Often _accelerates_ technical debt by generating flawed code faster. | None. Diagrams rot and go stale within days.                 | Tracks tickets representing tech debt after the fact. | **Eliminates technical debt upstream** by catching bad assumptions before implementation. |
+| **Interaction Model**        | Autocomplete prompts in code editors                                 | Drag-and-drop shapes & text labels                           | Form fields, kanban boards, and sprints               | **Voice Studio brain dumps, live AI ambiguity probes, and decision matrices**             |
+| **Living State**             | Transient chat context; discarded across sessions                    | Dead PNG exports or unversioned canvas files                 | Closed tickets; detached from design reality          | **Relational, queryable, synchronized decision records linked directly to specs**         |
 
 ### Why Existing Tools Fall Short:
+
 1. **AI Code Generators (Cursor / Copilot):** Brilliant at autocompleting functions, but blind to system-level architecture. If you ask an AI assistant to build a feature on a flawed data model or missing auth boundary, it will happily generate 2,000 lines of brittle code.
 2. **Diagramming Software (Mermaid / Eraser / Lucidchart):** Static drawings that quickly diverge from reality. They don't warn you that your chosen database cannot support your P99 latency target or that your auth flow lacks multi-tenant isolation.
 3. **General LLM Chatbots (ChatGPT / Claude web):** Unstructured, ephemeral conversations that lose context, hallucinate arbitrary schemas, and cannot persist structured entities to an active engineering workflow.
@@ -92,6 +91,7 @@ Where does Archon fit into your engineering toolkit? Here is how it fundamentall
 This repository represents the completed **Milestone 1 (Prototype 1)** release of Archon, establishing the end-to-end foundation, design language, and AI reasoning engine:
 
 ### 🎙️ 1. Archon Voice Studio (Hands-Free Architectural Scaffolding)
+
 - **Natural Dictation Canvas:** High-density, tactile vision workbench allowing architects to speak their system thoughts freely without typing friction.
 - **Web Speech API Engine:** Continuous speech recognition with real-time interim transcription, automatic silence detection, and graceful fallbacks for unsupported environments.
 - **Visual Feedback System:** 3-bar sound wave micro-animations (`pulse_0.7s`, `pulse_0.5s`, `pulse_0.8s`), pulsating emerald beacon, and live word counter.
@@ -99,12 +99,14 @@ This repository represents the completed **Milestone 1 (Prototype 1)** release o
 - **Inline Dictation:** Voice dictation buttons integrated directly into project creation forms and clarification decision cards.
 
 ### 📐 2. Multi-Dimensional Requirements Matrix
+
 - **8 Architectural Dimensions:** Categorize specifications across `Functional`, `Non-functional`, `Security`, `Performance`, `AI`, `Data`, `Infrastructure`, and `Business`.
 - **Strict Priority & Status Lifecycles:** Track items through `Low`, `Medium`, `High`, and `Critical` priorities, and transition states from `Draft` to `Confirmed`.
 - **Constraint & Assumption Tracking:** Dedicated specification fields capturing performance limits (e.g. `P99 < 50ms`), compliance rules, and engineering assumptions.
 - **Live Search & Filter:** Filter requirements instantly by status counters or architectural category pills.
 
 ### ⚡ 3. Dual-Tier AI Ambiguity & Clarification Engine
+
 - **Automated Ambiguity Discovery:** Analyzes project scope and current specifications to identify hidden trade-offs, unstated security boundaries, and architectural risks.
 - **Dual-Tier Model Fallback Architecture:**
   1. **Primary Model:** Google `gemma-4-31b-it` for deep, nuanced architectural reasoning.
@@ -114,6 +116,7 @@ This repository represents the completed **Milestone 1 (Prototype 1)** release o
 - **Direct Decision Conversion:** Apply decisions with one click to convert an answer directly into a binding architectural requirement or system constraint.
 
 ### 🖤 4. Stark Monochrome & Silver Design System
+
 - **Disciplined Engineer Aesthetic:** Inspired by the craft of Vercel, Linear, and Resend. Pure obsidian `#09090B` canvas, elevated `#121215` card surfaces, and brushed silver `#D4D4D8` accents.
 - **Quarantined Semantics:** Chromatic color is strictly banned from decorative chrome and restricted exclusively to status signals:
   - 🟢 **Emerald:** Active voice recording, confirmed specifications, verified health states.
@@ -122,6 +125,7 @@ This repository represents the completed **Milestone 1 (Prototype 1)** release o
 - **Official shadcn/ui Component Suite:** Built on Radix and Base UI primitives (`Textarea`, `Input`, `Button`, `Card`, `Badge`, `Dialog`, `Popover`, `Select`).
 
 ### 🛡️ 5. Enterprise Validation & Observability
+
 - **Zod Request Validation Middleware:** Uniform `validateRequestBody` utility validating every API payload with detailed issue paths and formatted 400 bad-request responses.
 - **Structured JSON Logging:** Zero-dependency, machine-readable JSON logger tracking every HTTP route, status code, latency (`durationMs`), user ID, and contextual metadata.
 - **AI Clarification Telemetry:** Tracks high-resolution inference latency via `performance.now()`, token consumption (`inputTokens`, `outputTokens`, `totalTokens`), model ID, ambiguity counts, and fallback triggers.
@@ -146,18 +150,21 @@ Archon enforces strict quality gates across every commit and build:
 ```
 
 ### 1. TypeScript Strict Type Checking
+
 ```bash
 npx tsc --noEmit
 # Exit code: 0 (Zero errors)
 ```
 
 ### 2. Vitest Unit & Integration Suites (100% Pass Rate)
+
 ```bash
 npx vitest run
 # Test Files  14 passed (14)
 # Tests       102 passed (102)
 # Duration    6.53s
 ```
+
 - **Project API Routes:** GET, POST, PATCH, DELETE, authorization checks, query filtering, and 500 error cascades ([`src/app/api/projects/route.test.ts`](file:///c:/Users/suhai/agent/archon/src/app/api/projects/route.test.ts) & [`[id]/route.test.ts`](file:///c:/Users/suhai/agent/archon/src/app/api/projects/[id]/route.test.ts)).
 - **Requirement API Routes:** Listing, category enum conversions, Zod schema validation, default assignments, and deletion ([`src/app/api/projects/[id]/requirements/route.test.ts`](file:///c:/Users/suhai/agent/archon/src/app/api/projects/[id]/requirements/route.test.ts) & [`src/app/api/requirements/[id]/route.test.ts`](file:///c:/Users/suhai/agent/archon/src/app/api/requirements/[id]/route.test.ts)).
 - **Voice Scaffolding Engine:** Web Speech prompt builders, fallback scaffolding heuristics, and API route security ([`src/lib/voice-scaffold.test.ts`](file:///c:/Users/suhai/agent/archon/src/lib/voice-scaffold.test.ts) & [`route.test.ts`](file:///c:/Users/suhai/agent/archon/src/app/api/projects/voice-scaffold/route.test.ts)).
@@ -165,12 +172,15 @@ npx vitest run
 - **Decision Conversion & Rate Limiting:** Verification of conversion into requirements/constraints and sliding-window rate limiting ([`convert/route.test.ts`](file:///c:/Users/suhai/agent/archon/src/app/api/clarifications/[id]/convert/route.test.ts) & [`rate-limiter.test.ts`](file:///c:/Users/suhai/agent/archon/src/lib/rate-limiter.test.ts)).
 
 ### 3. Playwright End-to-End Workflow Verification
+
 ```bash
 npx playwright test e2e/project-workflow.spec.ts
 # ok 1 [chromium] › complete workflow: create project → add requirement → clarify
 # 1 passed (2.1m)
 ```
+
 Validates the complete real-world user path against live PostgreSQL and remote Gemini AI models:
+
 1. User registration with session establishment (`/sign-up`).
 2. Dashboard load and project initialization (`Create New Project`).
 3. Navigation into the project workspace (`/projects/[id]`).
@@ -206,17 +216,17 @@ Validates the complete real-world user path against live PostgreSQL and remote G
    └─────────────────────────────┘     └─────────────────────────────┘
 ```
 
-| Layer | Technologies |
-|---|---|
-| **Framework** | [Next.js 16.3.5](https://nextjs.org/) (App Router, Server Components, Route Handlers) |
-| **Language & Runtime** | [TypeScript 5](https://www.typescriptlang.org/), [React 19](https://react.dev/), Node.js 20+ |
-| **Design & UI Primitives** | [Tailwind CSS v4](https://tailwindcss.com/), [shadcn/ui](https://ui.shadcn.com/) (Radix / Base UI), Lucide Icons |
-| **AI Architecture** | [Vercel AI SDK v7](https://sdk.vercel.ai/) (`ai`, `@ai-sdk/google`), Google Gemma-4-31b & Gemini 3.5 Flash |
-| **Voice Processing** | Browser-native [Web Speech API](https://developer.mozilla.org/en-US/docs/Web/API/Web_Speech_API) (`webkitSpeechRecognition`), Web Audio API |
-| **Database & ORM** | [PostgreSQL](https://www.postgresql.org/) (Neon Serverless), [Prisma ORM 7.10](https://www.prisma.io/) with `@prisma/adapter-pg` |
-| **Authentication** | [Better-Auth 1.7](https://www.better-auth.com/) (Email/Password + Google OAuth) with Prisma Adapter |
-| **Validation** | [Zod 4](https://zod.dev/) request body middleware and response schemas |
-| **Testing** | [Vitest 4](https://vitest.dev/), React Testing Library, [Playwright 1.52](https://playwright.dev/) |
+| Layer                      | Technologies                                                                                                                                |
+| -------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------- |
+| **Framework**              | [Next.js 16.3.5](https://nextjs.org/) (App Router, Server Components, Route Handlers)                                                       |
+| **Language & Runtime**     | [TypeScript 5](https://www.typescriptlang.org/), [React 19](https://react.dev/), Node.js 20+                                                |
+| **Design & UI Primitives** | [Tailwind CSS v4](https://tailwindcss.com/), [shadcn/ui](https://ui.shadcn.com/) (Radix / Base UI), Lucide Icons                            |
+| **AI Architecture**        | [Vercel AI SDK v7](https://sdk.vercel.ai/) (`ai`, `@ai-sdk/google`), Google Gemma-4-31b & Gemini 3.5 Flash                                  |
+| **Voice Processing**       | Browser-native [Web Speech API](https://developer.mozilla.org/en-US/docs/Web/API/Web_Speech_API) (`webkitSpeechRecognition`), Web Audio API |
+| **Database & ORM**         | [PostgreSQL](https://www.postgresql.org/) (Neon Serverless), [Prisma ORM 7.10](https://www.prisma.io/) with `@prisma/adapter-pg`            |
+| **Authentication**         | [Better-Auth 1.7](https://www.better-auth.com/) (Email/Password + Google OAuth) with Prisma Adapter                                         |
+| **Validation**             | [Zod 4](https://zod.dev/) request body middleware and response schemas                                                                      |
+| **Testing**                | [Vitest 4](https://vitest.dev/), React Testing Library, [Playwright 1.52](https://playwright.dev/)                                          |
 
 ---
 
@@ -274,12 +284,14 @@ archon/
 ## Getting Started
 
 ### Prerequisites
+
 - **Node.js**: v20.x or higher
 - **Package Manager**: `npm` (v10+)
 - **Database**: PostgreSQL database instance (local or [Neon Serverless Postgres](https://neon.tech/))
 - **Google AI API Key**: Optional for live Gemini reasoning; fallback heuristics take over automatically if omitted.
 
 ### 1. Clone & Install Dependencies
+
 ```bash
 git clone https://github.com/your-org/archon.git
 cd archon
@@ -287,6 +299,7 @@ npm install
 ```
 
 ### 2. Configure Environment Variables
+
 Create a `.env` file in the root directory:
 
 ```env
@@ -306,24 +319,31 @@ GOOGLE_CLIENT_SECRET=""
 ```
 
 ### 3. Synchronize Database Schema
+
 Push the Prisma schema to your PostgreSQL database:
+
 ```bash
 npx prisma db push
 ```
 
 ### 4. Run Development Server
+
 ```bash
 npm run dev
 ```
+
 Open [http://localhost:3000](http://localhost:3000) in your browser to start using Archon Studio.
 
 ### 5. Execute Verification Suites
+
 Run unit and integration tests:
+
 ```bash
 npm test
 ```
 
 Run end-to-end workflow verification with Playwright:
+
 ```bash
 # Install Playwright browser binaries (first time only)
 npx playwright install chromium
@@ -375,7 +395,7 @@ Archon's progression follows a 4-milestone roadmap:
 
 ## Brand & Design Credits
 
-- **Identity**: Archon Studio — *IDEAS → ARCHITECTURE → IMPACT*
+- **Identity**: Archon Studio — _IDEAS → ARCHITECTURE → IMPACT_
 - **Design Language**: Stark Monochrome with Brushed Silver Core (`#D4D4D8`)
 - **Iconography**: [Lucide Icons](https://lucide.dev/)
 - **Components**: [shadcn/ui](https://ui.shadcn.com/)
