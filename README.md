@@ -1,6 +1,6 @@
 <div align="center">
 
-  <img src="./public/archon-logo.svg" alt="ARCHON Logo" width="380">
+  <img src="./public/archon-logo-white.svg" alt="ARCHON Logo" width="380">
 
   <h1>ARCHON</h1>
 
